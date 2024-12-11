@@ -1,0 +1,18 @@
+body {
+    margin: 0px;
+    margin-top: -17px; 
+ }
+ .bg {
+    background-color:beige;
+    height: 70px;
+    top: -20px; 
+ }
+ .li1 {
+      display: inline-block;
+      padding: 25px;
+      color: black;
+      font-size: 18px;
+      position: relative;
+      top: -17px; 
+
+ }
