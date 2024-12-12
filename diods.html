@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продаж світлодіодів</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-card h3 {
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .product-card p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .product-card .price {
+            color: #28a745;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product-card button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product-card button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Продаж світлодіодів</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="#products">Товари</a>
+        <a href="#about">Про нас</a>
+        <a href="#contact">Контакти</a>
+    </nav>
+
+    <div class="container" id="products">
+        <h2>Наші продукти</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://img.joomcdn.net/32b2547898555b4a897927ca06192d9dc358e0f9_1024_1024.jpeg" alt="Світлодіод 1">
+                <h3>Світлодіод 1</h3>
+                <p>Яскравий та економний світлодіод для домашнього використання.</p>
+                <div class="price">150 грн</div>
+                <button onclick="addToCart('Світлодіод 1', 150)">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="https://ledprofi.ua/assets/images/lamps/new/A-LED-60x70-1000.png" alt="Світлодіод 2">
+                <h3>Світлодіод 2</h3>
+                <p>Світлодіод для освітлення офісів та вулиць.</p>
+                <div class="price">200 грн</div>
+                <button onclick="addToCart('Світлодіод 2', 200)">Додати в кошик</button>
+            </div>
+            <div class="product-card">
+                <img src="https://elf-led.com.ua/wp-content/uploads/2024/10/elf_led_lamp_220v_no_tsokol_colors.png" alt="Світлодіод 3">
+                <h3>Світлодіод 3</h3>
+                <p>Світлодіод для декоративного освітлення.</p>
+                <div class="price">120 грн</div>
+                <button onclick="addToCart('Світлодіод 3', 120)">Додати в кошик</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Продаж світлодіодів. Усі права захищено.</p>
+    </footer>
+
+    <script>
+        function addToCart(productName, productPrice) {
+            alert(productName + " за " + productPrice + " грн додано в кошик!");
+        }
+    </script>
+</body>
+</html>
